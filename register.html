@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/register.css">
+        <title>Filter-Application</title>
+    </head>
+    <body>
+        <nav>
+            <label class='toggle'>
+             <i class="fa fa-bars"></i>
+            </label>
+         <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="register.html">REGISTERr</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+         <div class="social_top">
+             <div class="top_social">
+                <a href="#"><i class='fa fa-twitter'></i></a>
+                 <a href="#"><i class='fa fa-linkedin'></i></a>
+                 <a href="#"><i class='fa fa-instagram'></i></a>
+                 <a href="#"><i class='fa fa-telegram'></i></a>
+             </div>
+         </div>
+        </nav>
+        <h3>Register With Us</h3>
+        <div class="underline"></div>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit()">
+                        <div>
+                            <label for="fullname">Full Name*</label>
+                            <input type="text" placeholder="Enter Name..." id="name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Enter Email..." id="email">
+                        </div>
+                        <div>
+                            <label for="fullname">Classification</label>
+                            <input type="text" placeholder="Your class..." id="classification">
+                        </div>
+                        <div>
+                            <label for="fullname">Specialisation</label>
+                            <input type="text" placeholder="Your stack..." id="special">
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <div class="filter_container">
+          <input id="filterInput" type="text" placeholder="search here...">
+        </div>
+        <!-- second table -->
+        <table class="list" id="studentList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Classification</th>
+                    <th>Specialisation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <!-- End of second table -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+          $('.toggle i').click(function(){
+            $('ul').toggleClass('show');
+          });
+        </script>
+        <footer class="foot">
+            <h4>©️CopyRight All Rights Reserved</h4>
+        </footer>
+    
+        <script src="app.js"></script>
+    </body>
+    </html>
